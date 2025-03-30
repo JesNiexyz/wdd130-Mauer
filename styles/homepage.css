@@ -5,10 +5,11 @@ body {
 header {
     background-color: #32302d;
     padding: 20px 0;
+    width: 100%;
 }
 
 .content-container {
-    max-width: 1200px;
+    
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -19,6 +20,7 @@ header {
     align-items: center;
     width:100%;
     height: 100%;
+    overflow: hidden;
 }
 .box{
     display: flex;
@@ -26,19 +28,21 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
-    max-height: 600px;
-    max-height: 1200px;
+    overflow: hidden;
 }
-.logo{
+#logo{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    width:100%;
     
 }
 #logo img {
     max-width: 200px;
     height: auto;
+    border-radius: 50%;
+    
     
 }
 
@@ -47,7 +51,7 @@ nav {
     margin-top: 20px;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px;
+    
 }
 
 nav a {
@@ -56,10 +60,155 @@ nav a {
     text-decoration: none;
     color: #edd6a5;
     font-size: 24px;
-    
+    font-family: "Quicksand";
 }
 
 nav a:hover {
     text-decoration: solid;
     color:#76949f ;
+    text-decoration: underline;
 }
+#hero{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+}
+#hero-box{ 
+    display: grid;
+    grid-area: 1/1/6/6;
+
+}#hero-img{
+    grid-area: 1/1/6/6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+   
+}
+
+
+#hero-msg{
+    grid-area: 3/3/4/4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #edd6a5;
+    display: grid;
+    background-color: rgba(0,0,0,0.5);
+    
+
+}
+.home-title{
+    
+    color:#664429 ;
+    font-size: 48px;
+    background-color: rgba(255,255,255,0.8);
+    
+
+}
+
+
+#progress-header{
+    grid-column:1/-1;
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 60px;
+    margin-bottom: 2px;
+}
+#progress{ 
+    display:grid;
+    grid-template-columns: 32% 32% 36%;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+
+#moon, #unlucky, #third{
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 24px;
+    overflow: hidden;
+
+}
+#third img{
+    margin-bottom:20px;
+}
+#moon img, #unlucky img, #third img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.sign {
+    display: grid;
+    width: 100%;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+    
+    padding: 0;
+}
+
+
+.sign-box {
+    display: grid;
+    width: 100%;
+    
+    max-width: 100%;
+    height: auto;
+   
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+#sign-img {
+    grid-area: 1 / 1 / -1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+footer {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px; 
+    background-color: #32302d;
+    width: 100%;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0; 
+    color: #edd6a5;
+    font-family: 'Quicksand';
+}
+
+footer a {
+    font-family: "quicksand";
+    
+    text-decoration: none;
+    color: #edd6a5;
+    font-size: 18px;
+    margin: 0 20px; 
+}
+
+footer a:hover {
+    color: #76949f;
+    text-decoration: underline; 
+}
+
+
+
+    
