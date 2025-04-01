@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Shadows+Into+Light&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #EDD6A5   ;
+  --secondary-color: #664429 ;
+  --accent1-color: #32302D;
+  --accent2-color: #76949F;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Satisfy;
+  --paragraph-font: "Shadows Into Light";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #32302D;  /* headlines on a white background */ 
+  --headline-color-on-color: #EDD6A5; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #76949F; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #EDD6A5; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #664429 ;
+  --nav-link-color: #EDD6A5;
+  --nav-background-color: #32302D;
+  --nav-hover-link-color: #664429;
+  --nav-hover-background-color: #EDD6A5;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -210,5 +235,70 @@ footer a:hover {
 }
 
 
+/* CSS FOR AUTHOR PAGE */
 
-    
+
+
+.quote-container{
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-container img{
+    display: block;
+}
+
+.quoteMsg{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.middle-header {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    background: var(--accent1-color);
+    color: var(--headline-color-on-color);
+    padding: 20px 0;
+    margin: 50px 0;
+}
+
+
+.author-container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    column-gap: 15px
+}
+
+.author-container img{
+    width: ;
+    height: 100%;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.author-container p{
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    color:var(--paragraph-color-on-white)
+}
