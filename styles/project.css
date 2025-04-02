@@ -107,6 +107,9 @@ nav a:hover {
     
 
 }
+h1{
+    color: #edd6a5;
+}
 
 
 #progress-header{
@@ -132,18 +135,26 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
 }
 .projectcontainer section {
-    margin: auto;
     width: 100%;
-    background-color: grey;
-    
+    background-color: #76949F;
+    gap: 20px;
+    justify-content: center;
 }
 .shortstorybox {
-    background-color: grey;
+    background-color: #76949F;
     margin: auto;
     text-align: center;
-    width: 100%;
+    width: 80%; 
 }
 .project1 img{
+    display: flex;
+    width: 50%;
+    padding-top: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.project2 img{
     display: flex;
     width: 50%;
     padding-top: 20px;
@@ -159,11 +170,31 @@ nav a:hover {
 .projecttitle{
     text-align: center;
     width: 100%;
+    background-color: #32302D;
+    color: #EDD6A5;
+    box-sizing: border-box;
 }
-p{
+.projectcontainer p {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+p  {
     text-indent: 50px;
 }
-
+.shortstorybox h1 {
+    color: ;
+}
+.shortstorybox {
+    width: 100%;
+}
+.blackbird {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #32302D;
+    color: #EDD6A5;
+}
 
 
 
